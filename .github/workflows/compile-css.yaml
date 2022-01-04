@@ -29,8 +29,8 @@ jobs:
             ${vend}/bootstrap/bootstrap.js \
             ${vend}/jquery-visible/jquery.visible.js \
             ${vend}/feather-icons/feather.js \
-            ${cust}/menu.js
-          --compress
+            ${cust}/menu.js \
+          --compress \
           --output assets/assets/carpentries-scripts.js
       - name: Commit
         run: |
