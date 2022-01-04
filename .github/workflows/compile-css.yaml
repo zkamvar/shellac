@@ -22,8 +22,8 @@ jobs:
           node-version: '14'
       - run: npm install -g uglify-js
       - run: |
-          vend=assets/javascripts/vendor
-          cust=assets/javascripts/custom
+          vend=${{ github.workspace }}/assets/javascripts/vendor
+          cust=${{ github.workspace }}/assets/javascripts/custom
           uglifyjs ${vend}/jquery/jquery.js \
             ${vend}/bootstrap/bootstrap.js \
             ${vend}/jquery-visible/jquery.visible.js \
