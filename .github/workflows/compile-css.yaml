@@ -9,16 +9,17 @@ jobs:
     runs-on: macOS-11
     steps:
       - uses: actions/checkout@v2
-      - name: Install sass
-        run: brew install sass/sass/sass
-      - name: Compile sass
-        run: bash squash-sass.sh
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
       - run: npm install
       - run: npm install -g uglify-js
-      - run: bash squash-a-script.sh
+      - name: Comple js
+        run: bash squash-a-script.sh
+      - name: Install sass
+        run: brew install sass/sass/sass
+      - name: Compile sass
+        run: bash squash-sass.sh
       - name: Commit
         run: |
           git config --local user.email "actions@github.com"
