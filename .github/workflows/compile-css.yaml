@@ -32,7 +32,7 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add assets/styles.css assets/scripts.js assets/mathjax/
+          git add assets/styles.css assets/scripts.js assets/output/
           git commit -m 'regenerated css/js' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
 
