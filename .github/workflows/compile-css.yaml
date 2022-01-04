@@ -16,7 +16,7 @@ jobs:
           mkdir -p assets/assets/
           sass -s compressed \
           assets/stylesheets/styles.css.scss \
-          assets/assets/carpentries-style.css
+          assets/assets/styles.css
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
@@ -31,7 +31,7 @@ jobs:
             ${vend}/feather-icons/feather.js \
             ${cust}/menu.js \
           --compress \
-          --output assets/assets/carpentries-scripts.js
+          --output assets/assets/scripts.js
       - name: Commit
         run: |
           git config --local user.email "actions@github.com"
