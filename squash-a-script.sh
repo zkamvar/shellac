@@ -13,4 +13,4 @@ uglifyjs ${vend}/jquery/jquery.js \
   --compress \
   --output assets/scripts.js
 
-cp -rf ${vend}/output/chtml/* assets/output/chtml/
+cp -rf ${vend}/mathjax/output/chtml/* assets/output/chtml/
