@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-mkdir -p assets/assets/
-vend=assets/javascripts/vendor
-cust=assets/javascripts/custom
+mkdir -p source/
+vend=source/javascripts/vendor
+cust=source/javascripts/custom
 
 uglifyjs ${vend}/jquery/jquery.js \
   ${vend}/bootstrap/bootstrap.js \
@@ -10,4 +10,4 @@ uglifyjs ${vend}/jquery/jquery.js \
   ${vend}/feather-icons/feather.js \
   ${cust}/menu.js \
   --compress \
-  --output assets/assets/scripts.js
+  --output assets/scripts.js
