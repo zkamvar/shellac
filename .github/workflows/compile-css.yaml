@@ -1,0 +1,23 @@
+on:
+  push: []
+
+name: Render css
+
+jobs:
+  render:
+    name: Render css
+    runs-on: macOS-11
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install sass
+        run: brew install sass/sass/sass
+      - name: Compile sass
+        run: |
+          mkdir -p assets/assets/
+          sass -s compact assets/stylesheets/styles.css.scss assets/assets/carpentries-style.css
+      - name: Commit
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git commit assets/assets/carpentries-style.css -m 'regenerated css' || echo "No changes to commit"
+        git push origin || echo "No changes to commit"
+
