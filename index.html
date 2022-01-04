@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Carpentries Instructor View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+    <script type="text/javascript" src="/assets/scripts.js"></script>
+    
+    <!-- Responsive Favicon for The Carpentries -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+  </head>
+  <body>
+    <div class="container">
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+
+  <button type="button" class="btn btn-primary-outline">Primary Button</button>
+
+  <br/>
+
+  <a href="#">Link</a>
+
+  <br/>
+
+  <div class="overview card">
+    <h2 class="card-header">
+      Overview
+    </h2>
+    <div class="row g-0">
+      <div class="col-md-4">
+        <div class="card-body">
+          <div class="inner ">
+            <h3 class="card-title">Questions</h3>
+            <ul>
+              <li>How can I manipulate a data frame?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+
+        <div class="card-body">
+          <div class="inner bordered">
+            <h3 class="card-title">Objectives</h3>
+            <ul>
+              <li>Use the dplyr package to manipulate data frames.</li>
+              <li> Remove rows with NA values</li>
+              <li>Append two data frames. </li>
+              <li>Understand what a factor is.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <figure>
+    <img alt="Data Frames Figure" class="figure mx-auto d-block" src="/assets/13-dplyr-fig1.png">
+    <figcaption>Figure 1.1 Detailed description of the image and its contents for accessibility purposes.
+    </figcaption>
+  </figure>
+
+  <span class="math inline"><span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax" id="MathJax-Element-2-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>&amp;#x03B1;</mi><mo>=</mo><mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;><mfrac><mn>1</mn><mrow><mo stretchy=&quot;false&quot;>(</mo><mn>1</mn><mo>&amp;#x2212;</mo><mi>&amp;#x03B2;</mi><msup><mo stretchy=&quot;false&quot;>)</mo><mn>2</mn></msup></mrow></mfrac></mstyle></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-24" style="width: 6.966em; display: inline-block;"><span style="display: inline-block; position: relative; width: 5.822em; height: 0px; font-size: 119%;"><span style="position: absolute; clip: rect(0.758em, 1005.82em, 3.461em, -1000em); top: -2.281em; left: 0em;"><span class="mrow" id="MathJax-Span-25"><span class="mi" id="MathJax-Span-26" style="font-family: MathJax_Math; font-style: italic;">α</span><span class="mo" id="MathJax-Span-27" style="font-family: MathJax_Main; padding-left: 0.278em;">=</span><span class="mstyle" id="MathJax-Span-28" style="padding-left: 0.278em;"><span class="mrow" id="MathJax-Span-29"><span class="mfrac" id="MathJax-Span-30"><span style="display: inline-block; position: relative; width: 3.622em; height: 0px; margin-right: 0.12em; margin-left: 0.12em;"><span style="position: absolute; clip: rect(3.176em, 1000.43em, 4.202em, -1000em); top: -4.698em; left: 50%; margin-left: -0.25em;"><span class="mn" id="MathJax-Span-31" style="font-family: MathJax_Main;">1</span><span style="display: inline-block; width: 0px; height: 4.022em;"></span></span><span style="position: absolute; clip: rect(3.082em, 1003.5em, 4.452em, -1000em); top: -3.272em; left: 50%; margin-left: -1.751em;"><span class="mrow" id="MathJax-Span-32"><span class="mo" id="MathJax-Span-33" style="font-family: MathJax_Main;">(</span><span class="mn" id="MathJax-Span-34" style="font-family: MathJax_Main;">1</span><span class="mo" id="MathJax-Span-35" style="font-family: MathJax_Main; padding-left: 0.222em;">−</span><span class="mi" id="MathJax-Span-36" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em;">β<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.007em;"></span></span><span class="msubsup" id="MathJax-Span-37"><span style="display: inline-block; position: relative; width: 0.818em; height: 0px;"><span style="position: absolute; clip: rect(3.092em, 1000.29em, 4.452em, -1000em); top: -4.022em; left: 0em;"><span class="mo" id="MathJax-Span-38" style="font-family: MathJax_Main;">)</span><span style="display: inline-block; width: 0px; height: 4.022em;"></span></span><span style="position: absolute; top: -4.31em; left: 0.389em;"><span class="mn" id="MathJax-Span-39" style="font-size: 70.7%; font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 4.022em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 4.022em;"></span></span><span style="position: absolute; clip: rect(0.825em, 1003.62em, 1.261em, -1000em); top: -1.3em; left: 0em;"><span style="display: inline-block; overflow: hidden; vertical-align: 0em; border-top: 1.3px solid; width: 3.622em; height: 0px;"></span><span style="display: inline-block; width: 0px; height: 1.08em;"></span></span></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.281em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -1.261em; border-left: 0px solid; width: 0px; height: 2.93em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><mfrac><mn>1</mn><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>β</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow></mfrac></mstyle></math></span></span><script type="math/tex" id="MathJax-Element-2">\alpha = \dfrac{1}{(1 - \beta)^2}</script></span>
+
+  <div class="callout">
+    <div class="callout-square"><i aria-hidden="true" class="callout-icon" data-feather="bell"></i></div>
+    <div class="callout-inner">
+      <div class="callout-title">Information</div>
+      <div class="callout-content"><p>The shell is a program that enables us to send commands to the computer and receive output. It is also referred to as the terminal or command line.
+      </p><p>
+      Some computers include a default Unix Shell program. The steps below describe some methods for identifying and opening a Unix Shell program if you already have one installed. There are also options for identifying and downloading a Unix Shell program, a Linux/UNIX emulator, or a program to access a Unix Shell on a server.</p>
+      <p>
+      If none of the options below address your circumstances, try an online search for: Unix shell [your computer model] [your operating system].</p></div>
+    </div>
+  </div>
+
+  <div class="codewrapper">
+  <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre class="input"><code >
+drop <- names(cats) %in% c("age")
+cats[,!drop]
+  </code></pre>
+  </div>
+
+  <div class="codewrapper">
+  <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre class="output"><code >
+           coat weight likes_string
+1        calico    2.1            1
+2         black    5.0            0
+3         tabby    3.2            1
+5 tortoiseshell    3.3            1
+  </code></pre>
+
+    <div class="codewrapper">
+  <h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre class="error"><code >
+Error in data.frame(..., check.names = FALSE): arguments imply differing number of rows: 3, 2
+  </code></pre>
+  </div>
+
+  <div class="callout challenge">
+		<div class="callout-square"><i aria-hidden="true" class="callout-icon" data-feather="zap"></i></div>
+		<div class="callout-inner">
+			<h3 class="callout-title">Challenge</h3>
+			<div class="callout-content"><p>Let’s imagine that 1 cat year is equivalent to 7 human years.</p>
+
+			<p>Create a vector called human_age by multiplying cats$age by 7.
+			Convert human_age to a factor.
+			Convert human_age back to a numeric vector using the as.numeric() function. Now divide it by 7 to get the original ages back. Explain what happened.</p></div>
+		</div>
+	</div>
+		<div class="challenge-accordion accordion accordion-flush" id="accordionExample">
+			<div class="accordion-item">
+				<button class="accordion-button challenge-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					<h4 class="accordion-header" id="headingOne">
+						Give me a hint
+					</h4>
+				</button>
+				<div id="collapseOne" class="accordion-collapse challenge-button collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+            <div class="codewrapper">
+						<h3 class="code-label">INPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+            <pre class="input"><code >
+1.  human_age <- cats$age * 7
+2.  human_age <- factor(human_age). as.factor(human_age) works just as well.
+3.  as.numeric(human_age) yields 1 2 3 4 4
+						</code></pre>
+            </div>
+						<p>because factors are stored as integers (here, 1:4), each of which is associated with a label (here, 28, 35, 56, and 63). Converting the factor to a numeric vector gives us the underlying integers, not the labels. If we want the original numbers, we need to convert human_age to a character vector (using as.character (human_age)) and then to a numeric vector (why does this work?). This comes up in real life when we accidentally include a character somewhere in a column of a .csv file supposed to only contain numbers, and forget to set stringsAsFactors=FALSE when we read in the data.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    <div class="challenge-accordion accordion accordion-flush" id="accordionExample1">
+			<div class="accordion-item">
+				<button class="accordion-button challenge-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					<h4 class="accordion-header" id="headingTwo">
+						Show me the answer
+					</h4>
+				</button>
+				<div id="collapseTwo" class="accordion-collapse challenge-button collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample1">
+					<div class="accordion-body">
+						<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+					</div>
+				</div>
+			</div>
+		</div>
+
+    <div class="accordion instructor-note accordion-flush" id="accordionFlushExample">
+  		<div class="accordion-item">
+  			<button class="accordion-button collapsed instructor-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseInstructor" aria-expanded="false" aria-controls="flush-collapseInstructor">
+  				<h3 class="accordion-header" id="flush-headingInstructor">
+  					<div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Instructor Note
+  				</h3>
+  			</button>
+  			<div id="flush-collapseInstructor" class="accordion-collapse collapse" aria-labelledby="flush-headingInstructor" data-bs-parent="#accordionFlushExample">
+  				<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+  			</div>
+  		</div>
+  	</div>
+
+
+<div class="callout checklist">
+    <div class="callout-square"><i aria-hidden="true" class="callout-icon" data-feather="check-square"></i></div>
+    <div class="callout-inner">
+      <div class="callout-title">Checklist</div>
+      <div class="callout-content">
+        <ul>
+          <li>Use the dplyr package to manipulate data frames.</li>
+          <li> Remove rows with NA values</li>
+          <li>Append two data frames. </li>
+          <li>Understand what a factor is.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout testimonial">
+    <div class="callout-square"><i aria-hidden="true" class="callout-icon" data-feather="heart"></i></div>
+    <div class="callout-inner">
+      <div class="callout-title">Testimonial</div>
+      <div class="callout-content">
+        <p>The shell is a program that enables us to send commands to the computer and receive output. It is also referred to as the terminal or command line.
+        </p><p>
+        Some computers include a default Unix Shell program. The steps below describe some methods for identifying and opening a Unix Shell program if you already have one installed. There are also options for identifying and downloading a Unix Shell program, a Linux/UNIX emulator, or a program to access a Unix Shell on a server.</p>
+        <p>
+        If none of the options below address your circumstances, try an online search for: Unix shell [your computer model] [your operating system].</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout discussion">
+    <div class="callout-square"><i aria-hidden="true" class="callout-icon" data-feather="message-circle"></i></div>
+    <div class="callout-inner">
+      <div class="callout-title">Discussion</div>
+      <div class="callout-content"><p>The shell is a program that enables us to send commands to the computer and receive output. It is also referred to as the terminal or command line.
+      </p><p>
+      Some computers include a default Unix Shell program. The steps below describe some methods for identifying and opening a Unix Shell program if you already have one installed. There are also options for identifying and downloading a Unix Shell program, a Linux/UNIX emulator, or a program to access a Unix Shell on a server.</p>
+      <p>
+      If none of the options below address your circumstances, try an online search for: Unix shell [your computer model] [your operating system].</p></div>
+    </div>
+  </div>
+
+  <div class="callout prereq">
+    <div class="callout-square"><i aria-hidden="true" class="callout-icon" data-feather="check"></i></div>
+    <div class="callout-inner">
+      <div class="callout-title">Prerequisites</div>
+      <div class="callout-content"><p>The shell is a program that enables us to send commands to the computer and receive output. It is also referred to as the terminal or command line.
+      </p><p>
+      Some computers include a default Unix Shell program. The steps below describe some methods for identifying and opening a Unix Shell program if you already have one installed. There are also options for identifying and downloading a Unix Shell program, a Linux/UNIX emulator, or a program to access a Unix Shell on a server.</p>
+      <p>
+      If none of the options below address your circumstances, try an online search for: Unix shell [your computer model] [your operating system].</p></div>
+    </div>
+  </div>
+
+  <div class="callout keypoints">
+    <div class="callout-square"><i aria-hidden="true" class="callout-icon" data-feather="key"></i></div>
+    <div class="callout-inner">
+      <div class="callout-title">Key Points</div>
+      <div class="callout-content"><p>The shell is a program that enables us to send commands to the computer and receive output. It is also referred to as the terminal or command line.
+      </p><p>
+      Some computers include a default Unix Shell program. The steps below describe some methods for identifying and opening a Unix Shell program if you already have one installed. There are also options for identifying and downloading a Unix Shell program, a Linux/UNIX emulator, or a program to access a Unix Shell on a server.</p>
+      <p>
+      If none of the options below address your circumstances, try an online search for: Unix shell [your computer model] [your operating system].</p></div>
+    </div>
+  </div>
+
+  <script>
+      feather.replace();
+  </script>
+
+  </body>
+</html>
