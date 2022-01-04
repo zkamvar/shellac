@@ -14,7 +14,7 @@ jobs:
       - name: Compile sass
         run: |
           mkdir -p assets/assets/
-          sass -s compact assets/stylesheets/styles.css.scss assets/assets/carpentries-style.css
+          sass -s compressed assets/stylesheets/styles.css.scss assets/assets/carpentries-style.css
       - name: Commit
         run: |
           git config --local user.email "actions@github.com"
