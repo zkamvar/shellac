@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-mkdir -p source/
+mkdir -p assets/mathjax/output/chtml/
 vend=source/javascripts/vendor
 cust=source/javascripts/custom
 
@@ -12,3 +12,5 @@ uglifyjs ${vend}/jquery/jquery.js \
   ${cust}/menu.js \
   --compress \
   --output assets/scripts.js
+
+cp -rf ${vend}/mathjax/output/chtml/* assets/mathjax/output/chtml/

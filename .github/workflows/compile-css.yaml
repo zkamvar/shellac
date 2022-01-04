@@ -1,5 +1,12 @@
 on:
-  push: []
+  push: 
+    paths:
+      - source/**
+      - postinstall.sh
+      - squash-a-script.sh
+      - squash-sass.sh
+      - package.json
+      - package-lock.json
 
 name: Render CSS and Javascript
 
