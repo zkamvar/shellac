@@ -12,26 +12,13 @@ jobs:
       - name: Install sass
         run: brew install sass/sass/sass
       - name: Compile sass
-        run: |
-          mkdir -p assets/assets/
-          sass -s compressed \
-          assets/stylesheets/styles.css.scss \
-          assets/assets/styles.css
+        run: bash squash-sass.sh
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
       - run: npm install
       - run: npm install -g uglify-js
-      - run: |
-          vend=${{ github.workspace }}/assets/javascripts/vendor
-          cust=${{ github.workspace }}/assets/javascripts/custom
-          uglifyjs ${vend}/jquery/jquery.js \
-            ${vend}/bootstrap/bootstrap.js \
-            ${vend}/jquery-visible/jquery.visible.js \
-            ${vend}/feather-icons/feather.js \
-            ${cust}/menu.js \
-          --compress \
-          --output assets/assets/scripts.js
+      - run: bash squash-a-script.sh
       - name: Commit
         run: |
           git config --local user.email "actions@github.com"
