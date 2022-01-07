@@ -578,18 +578,15 @@ nrow(cats)
 
   <p>We can also remove columns in our data frame. What if we want to remove the column “age”. We can remove it in two ways, by variable number or by index.</p>
 
-  <div class="codewrapper">
+  <div class="sourceCode" id="cb1">
   <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
-  <pre tabindex="0" class="input"><code >
-drop <- names(cats) %in% c("age")
-cats[,!drop]
-  </code></pre>
+  <pre tabindex="0" class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>drop <span class="ot">&lt;-</span> <span class="fu">names</span>(cats) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;age&quot;</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>cats[,<span class="sc">!</span>drop]</span></code></pre>
   </div>
 
   <div class="codewrapper">
   <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
-  <pre tabindex="0" class="output"><code >
-           coat weight likes_string
+  <pre tabindex="0" class="output"><code >           coat weight likes_string
 1        calico    2.1            1
 2         black    5.0            0
 3         tabby    3.2            1

@@ -86,12 +86,24 @@
     </div>
   </div>
 
-  <div class="codewrapper">
+<p>This is what code directly from pandoc looks like</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>drop <span class="ot">&lt;-</span> <span class="fu">names</span>(cats) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;age&quot;</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>cats[,<span class="sc">!</span>drop]</span></code></pre></div>
+<p>This has been a markdown document with some code</p>
+<pre class="output"><code>           coat weight likes_string
+1        calico    2.1            1
+2         black    5.0            0
+3         tabby    3.2            1
+5 tortoiseshell    3.3            1</code></pre>
+
+
+  <div class="codewrapper" id="cb1">
   <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
-  <pre class="input"><code >
+  <pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>drop <span class="ot">&lt;-</span> <span class="fu">names</span>(cats) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;ageageageageageageageageageageageageageageageageageageageageageageageageage&quot;</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>cats[,<span class="sc">!</span>drop]</span>
+
 drop <- names(cats) %in% c("age")
-cats[,!drop]
-  </code></pre>
+cats[,!drop]</code></pre>
   </div>
 
   <div class="codewrapper">
@@ -103,6 +115,7 @@ cats[,!drop]
 3         tabby    3.2            1
 5 tortoiseshell    3.3            1
   </code></pre>
+  </div>
 
     <div class="codewrapper">
   <h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
