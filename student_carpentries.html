@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Carpentries Student View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <script src="assets/scripts.js" type="text/javascript"></script>
+    
+    <!-- Responsive Favicon for The Carpentries -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+  </head>
+  <body>
+    
+    
+    
+    
+    <header class="navbar navbar-expand-md navbar-light bg-white top-nav carpentries">
+  <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
+  <div class="container-fluid top-nav-container">
+    <div class="col-md-6">
+      <div class="large-logo"><img alt="carpentries logo" src="assets/carpentries-logo.svg"></div>
+    </div>
+
+    <div class="selector-container ">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+          English (US) <i data-feather="chevron-down"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><button class="dropdown-item" type="button">French</button></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle bordered-button" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
+          <i aria-hidden="true" class="icon" data-feather="eye"></i> Learner View <i data-feather="chevron-down"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><button class="dropdown-item" type="button">Instructor View</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr />
+</header>
+
+<nav class="navbar navbar-expand-xl navbar-light bg-white bottom-nav carpentries" aria-label="Main Navigation">
+  <div class="container-fluid nav-container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="menu-title">Menu</span>
+    </button>
+    <div class="nav-logo">
+      <img class="small-logo" src="assets/software-logo-sm.svg">
+    </div>
+    <div class="lesson-title-md">
+      The Unix Shell
+    </div>
+    <div class="search-icon-sm">
+      <i role="img" aria-label="search button" data-feather="search"></i>
+    </div>
+    <div class="desktop-nav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <span class="lesson-title">
+            The Unix Shell
+          </span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Key Points</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Glossary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Learner Profiles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Additional Resources</a>
+        </li>
+      </ul>
+    </div>
+    <form class="d-flex col-md-2 search-form">
+      <input class="form-control me-2 searchbox" type="search" placeholder="Search" aria-label="Search"> <button class="btn btn-outline-success tablet-search-button"  type="submit"><i class="search-icon" data-feather="search" role="img" aria-label="search button"></i></button>
+    </form>
+  </div>
+</nav>
+
+<div class="col-md-12 mobile-title">
+  The Unix Shell
+</div>
+
+<aside class="col-md-12 lesson-progress">
+  <div style="width: 25%" class="percentage">
+    25%
+  </div>
+  <div class="progress carpentries">
+    <div class="progress-bar carpentries" role="progressbar" style="width: 25%" aria-valuenow="25" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    </div>
+  </div>
+</aside>
+
+<div class="container">
+  <div class="row">
+    <div id="sidebar-col" class="col-lg-4">
+      <div id="sidebar" class="sidebar">
+        <nav aria-labelledby="flush-headingEleven">
+        <button role="button" aria-label="close menu" alt="close menu" aria-pressed="false" aria-expanded="false" aria-controls="sidebar" class="collapse-toggle" ><i class="search-icon" data-feather="x" role="img"></i></button>
+        <div class="sidebar-inner">
+          <div class="row mobile-row">
+
+            <div class="col">
+              <div class="sidenav-view-selector">
+                <div class="accordion accordion-flush" id="accordionFlush9">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingNine">
+                      <button class="accordion-button collapsed" id="instructor" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                       <i id="eye" aria-hidden="true" class="icon" data-feather="eye"></i>  Learner View
+                      </button>
+                    </h2>
+                    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlush2">
+                      <div class="accordion-body">
+                        <a href="#">Instructor View</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="sidenav-language-selector">
+                <div class="accordion accordion-flush" id="accordionFlush10">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTen">
+                      <button class="accordion-button side-language collapsed" id="language" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">English (US)
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlush2">
+                      <div class="accordion-body">
+                        <a href="#">French</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr/>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionFlush11">
+            <div class="accordion-item">
+              <button id="chapters" class="accordion-button show" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                <h2 class="accordion-header chapters" id="flush-headingEleven">
+                  CHAPTERS
+                </h2>
+              </button>
+              <div id="flush-collapseEleven" class="accordion-collapse show collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlush11">
+              <div class="accordion-body">
+                <a href="#">Summary and Setup</a>
+                <div class="accordion accordion-flush" id="accordionFlush1">
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                       Introducing the Shell
+                     </button>
+                   </div>
+                   <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush1">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Adding columns and rows to data frames</li>
+                        <li>Factors</li>
+                        <li>Removing Columns</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion accordion-flush" id="accordionFlush2">
+                <div class="accordion-item">
+                  <div  class="accordion-header " id="flush-headingTwo">
+                    <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                     <span class="visually-hidden">Current Chapter</span>
+                     <span class="current-chapter">Exploring Data Frames</span>
+                   </button>
+                 </div>
+                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush2">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a class="section-link" href="#addingcolumns">Adding columns and rows to data frames</a></li>
+                      <li><a class="section-link" href="#factors">Factors</a></li>
+                      <li><a class="section-link" href="#removingcolumns">Removing Columns</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionFlush8">
+              <div class="accordion-item">
+                <div class="accordion-header" id="flush-headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                   Working with Files and Directories
+                  </button>
+                </div>
+                <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlush3">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Adding columns and rows to data frames</li>
+                      <li>Factors</li>
+                      <li>Removing Columns</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionFlush4">
+              <div class="accordion-item">
+                <div class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                   Pipes and Filters
+                  </button>
+                </div>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlush4">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Adding columns and rows to data frames</li>
+                      <li>Factors</li>
+                      <li>Removing Columns</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionFlush5">
+              <div class="accordion-item">
+                <div class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                   Loops
+                  </button>
+                </div>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlush3">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Adding columns and rows to data frames</li>
+                      <li>Factors</li>
+                      <li>Removing Columns</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionFlush6">
+              <div class="accordion-item">
+                <div class="accordion-header" id="flush-headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                   Shell Scripts
+                  </button>
+                </div>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlush6">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Adding columns and rows to data frames</li>
+                      <li>Factors</li>
+                      <li>Removing Columns</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionFlush7">
+              <div class="accordion-item">
+                <div class="accordion-header" id="flush-headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    Finding Things
+                  </button>
+                </div>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlush3">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Adding columns and rows to data frames</li>
+                      <li>Factors</li>
+                      <li>Removing Columns</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="half-width"/>
+       <a href=#>See all in one page</a>
+
+      <hr class="d-none d-sm-block d-md-block"/>
+
+      <div class="accordion accordion-flush resources" id="accordionFlush12">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwelve">
+            <button id="resources" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+              RESOURCES
+            </button>
+          </h2>
+          <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlush12">
+            <div class="accordion-body">
+               <ul>
+                <li><a href="#">Key Points</a></li>
+                <li><a href="#">Glossary</a></li>
+                <li><a href="#">Learner Profiles</a></li>
+                <li><a href="#">Glossary</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+        <div class="d-grid gap-1">
+          <button class="btn btn-primary-outline">Export Lesson Outline</button>
+          <button class="btn btn-primary-outline">Export All Slides</button>
+        </div>
+      </div>
+    </div>
+    </nav>
+    </div>
+  </div>
+
+  <div class="col-xl-8 col-lg-12 primary-content">
+    <nav class="container lesson-content" aria-label="Previous and Next Chapter">
+      <div class="d-block d-sm-block d-md-none">
+        <a class="chapter-link" href="#"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+        <a class="chapter-link float-end" href="#">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+      </div>
+      <div class="d-none d-sm-none d-md-block">
+        <a class="chapter-link" href="#" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: Introducing the Shell</a>
+        <a class="chapter-link float-end" href="#" rel="next">Next: Working With Files... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+      </div>
+      <hr/>
+    </nav>
+    <main id="main-content" class="main-content">
+
+    <div class="container lesson-content">
+  <h1>Exploring Data Frames</h1>
+  <p> Last updated on Feb 12, 2021 | <a href="#">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+  <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 20 minutes </p>
+  <p><button class="btn btn-primary-outline">Export Chapter Slides</button></p>
+  <div class="text-end">
+    <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Code <i aria-hidden="true" data-feather="plus"></i></button>
+  </div>
+  <div class="overview card">
+    <h2 class="card-header">
+      Overview
+    </h2>
+    <div class="row g-0">
+      <div class="col-md-4">
+        <div class="card-body">
+          <div class="inner ">
+            <h3 class="card-title">Questions</h3>
+            <ul>
+              <li>How can I manipulate a data frame?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+
+        <div class="card-body">
+          <div class="inner bordered">
+            <h3 class="card-title">Objectives</h3>
+            <ul>
+              <li>Use the dplyr package to manipulate data frames.</li>
+              <li> Remove rows with NA values</li>
+              <li>Append two data frames. </li>
+              <li>Understand what a factor is.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="addingcolumns">
+  <h2 class="section-heading">Adding columns and rows in data frames</h2>
+
+  <hr class="half-width"/>
+  <p>We already learned that the columns of a data frame are vectors, so that our data are consistent in type throughout the columns. As such, if we want to add a new column, we can start by making a new vector.</p>
+
+  <div class="codewrapper">
+  <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre tabindex="0" class="input"><code>
+age <- c(2, 3, 5)
+cats
+  </code></pre>
+  </div>
+
+  <div class="codewrapper">
+  <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre tabindex="0" class="output"><code >
+    coat weight likes_string
+1 calico    2.1            1
+2  black    5.0            0
+3  tabby    3.2            1
+  </code></pre>
+  </div>
+
+  <figure>
+    <img alt="Data Frames Figure" class="figure mx-auto d-block" src="assets/13-dplyr-fig1.png">
+    <figcaption>Figure 1.1 Detailed description of the image and its contents for accessibility purposes.
+    </figcaption>
+  </figure>
+
+  <p>We can then add this as a column via:</p>
+  <div class="codewrapper">
+  <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre tabindex="0" class="input"><code >
+cbind(cats, age)
+  </code></pre>
+  </div>
+
+  <div class="codewrapper">
+  <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre tabindex="0" class="output"><code >
+    coat weight likes_string age
+1 calico    2.1            1   2
+2  black    5.0            0   3
+3  tabby    3.2            1   5
+  </code></pre>
+  </div>
+
+  <p>Note that if we tried to add a vector of ages with a different number of entries than the number of rows in the data frame, it would fail:</p>
+
+  <div class="codewrapper">
+  <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre tabindex="0" class="input"><code >
+age <- c(2, 3, 5, 12)
+cbind(cats, age)
+  </code></pre>
+  </div>
+
+  <div class="codewrapper">
+  <h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre tabindex="0" class="error"><code >
+Error in data.frame(..., check.names = FALSE): arguments imply differing number of rows: 3, 4
+  </code></pre>
+  </div>
+
+  <div class="codewrapper">
+  <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre tabindex="0" class="input"><code >
+age <- c(2, 3)
+cbind(cats, age)
+  </code></pre>
+  </div>
+
+  <div class="codewrapper">
+  <h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre tabindex="0" class="error"><code >
+Error in data.frame(..., check.names = FALSE): arguments imply differing number of rows: 3, 2
+  </code></pre>
+  </div>
+
+  <p>Why didn’t this work? Of course, R wants to see one element in our new column for every row in the table:</p>
+
+  <div class="codewrapper">
+    <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+    <pre tabindex="0" class="input"><code >
+nrow(cats)
+    </code></pre>
+  </div>
+
+  <div class="codewrapper">
+    <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+    <pre tabindex="0" class="output"><code >
+[1] 3
+    </code></pre>
+  </div>
+
+  </section>
+  <section id="factors">
+
+    <h2 class="section-heading">Factors</h2>
+
+    <hr class="half-width"/>
+
+    <p>For an object containing the data type factor, each different value represents what is called a level. In our case, the factor “coat” has 3 levels: “black”, “calico”, and “tabby”. R will only accept values that match one of the levels. If you add a new value, it will become NA. </p>
+
+    <p>The warning is telling us that we unsuccessfully added “tortoiseshell” to our coat factor, but 3.3 (a numeric), TRUE (a logical), and 9 (a numeric) were successfully added to weight, likes_string, and age, respectively, since those variables are not factors. To successfully add a cat with a “tortoiseshell” coat, add “tortoiseshell” as a possible level of the factor:</p>
+
+<div class="codewrapper">
+    <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+    <pre tabindex="0" class="input"><code >
+1.  human_age <- cats$age * 7
+2.  human_age <- factor(human_age). as.factor(human_age) works just as well.
+3.  as.numeric(human_age) yields 1 2 3 4 4
+  </code></pre>
+</div>
+
+<div class="codewrapper">
+  <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre tabindex="0" class="output"><code >
+[1] 3
+    </code></pre>
+  </div>
+
+<div class="codewrapper">
+    <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+    <pre tabindex="0" class="input"><code >
+1.  human_age <- cats$age * 7
+2.  human_age <- factor(human_age). as.factor(human_age) works just as well.
+3.  as.numeric(human_age) yields 1 2 3 4 4
+  </code></pre>
+</div>
+
+<div class="callout challenge">
+  <div class="callout-square"><i aria-hidden="true" class="callout-icon" data-feather="zap"></i></div>
+  <div class="callout-inner">
+    <h3 class="callout-title">Challenge</h3>
+    <div class="callout-content"><p>Let’s imagine that 1 cat year is equivalent to 7 human years.</p>
+
+    <p>Create a vector called human_age by multiplying cats$age by 7.
+    Convert human_age to a factor.
+    Convert human_age back to a numeric vector using the as.numeric() function. Now divide it by 7 to get the original ages back. Explain what happened.</p></div>
+  </div>
+</div>
+  <div class="challenge-accordion accordion accordion-flush" id="accordionExample">
+    <div class="accordion-item">
+      <button class="accordion-button challenge-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <h4 class="accordion-header" id="headingOne">
+          Give me a hint
+        </h4>
+      </button>
+      <div id="collapseOne" class="accordion-collapse challenge-button collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div class="codewrapper">
+          <h3 class="code-label">INPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+          <pre tabindex="0" class="input"><code >
+1.  human_age <- cats$age * 7
+2.  human_age <- factor(human_age). as.factor(human_age) works just as well.
+3.  as.numeric(human_age) yields 1 2 3 4 4
+          </code></pre>
+          </div>
+          <p>because factors are stored as integers (here, 1:4), each of which is associated with a label (here, 28, 35, 56, and 63). Converting the factor to a numeric vector gives us the underlying integers, not the labels. If we want the original numbers, we need to convert human_age to a character vector (using as.character (human_age)) and then to a numeric vector (why does this work?). This comes up in real life when we accidentally include a character somewhere in a column of a .csv file supposed to only contain numbers, and forget to set stringsAsFactors=FALSE when we read in the data.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="challenge-accordion accordion accordion-flush" id="accordionExample1">
+    <div class="accordion-item">
+      <button class="accordion-button challenge-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <h4 class="accordion-header" id="headingTwo">
+          Show me the answer
+        </h4>
+      </button>
+      <div id="collapseTwo" class="accordion-collapse challenge-button collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample1">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="removingcolumns">
+  <h2 class="section-heading">Removing columns</h2>
+
+  <hr class="half-width"/>
+
+  <p>We can also remove columns in our data frame. What if we want to remove the column “age”. We can remove it in two ways, by variable number or by index.</p>
+
+  <div class="codewrapper">
+  <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre tabindex="0" class="input"><code >
+drop <- names(cats) %in% c("age")
+cats[,!drop]
+  </code></pre>
+  </div>
+
+  <div class="codewrapper">
+  <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre tabindex="0" class="output"><code >
+           coat weight likes_string
+1        calico    2.1            1
+2         black    5.0            0
+3         tabby    3.2            1
+5 tortoiseshell    3.3            1
+  </code></pre>
+  </div>
+
+  <p>Notice the comma with nothing before it, indicating we want to keep all of the rows.</p>
+
+  <p>Alternatively, we can drop the column by using the index name and the %in% operator. The %in% operator goes through each element of its left argument, in this case the names of cats, and asks, “Does this element occur in the second argument?”</p>
+
+  <div class="codewrapper">
+  <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre tabindex="0" class="input"><code >
+drop <- names(cats) %in% c("age")
+cats[,!drop]
+  </code></pre>
+  </div>
+
+  <div class="codewrapper">
+  <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i></h3>
+  <pre tabindex="0" class="output"><code >
+           coat weight likes_string
+1        calico    2.1            1
+2         black    5.0            0
+3         tabby    3.2            1
+5 tortoiseshell    3.3            1
+  </code></pre>
+  </div>
+
+  <p>We will cover subsetting with logical operators like %in% in more detail in the next episode. See the section <a href="#">Subsetting through other logical operations</a></p>
+
+
+  <div class="callout keypoints">
+    <div class="callout-square"><i aria-hidden="true" class="callout-icon" data-feather="key"></i></div>
+    <div class="callout-inner">
+      <h3 class="callout-title">Key Points</h3>
+      <div class="callout-content">
+        <ul>
+          <li>Use cbind() to add a new column to a data frame.</li>
+          <li>Use rbind()to add a new row to a data frame.</li>
+          <li>Remove rows from a data frame.</li>
+          <li>Use na.omit() to remove rows from a data frame with NA values.</li>
+          <li>Use levels() and as.character() to explore and manipulate factors.</li>
+          <li>Use str(), summary(), nrow(), ncol(), dim(), colnames(), rownames(), head(), and typeof() to understand the structure of a data frame.</li>
+          <li>Read in a csv file using read.csv().</li>
+          <li>Understand what length() of a data frame represents.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+    				</main> <!-- / main#main-content.main-content -->
+        <nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter">
+          <div class="d-block d-sm-block d-md-none">
+            <a class="chapter-link" href="#"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+            <a class="chapter-link float-end" href="#">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+          </div>
+          <div class="d-none d-sm-none d-md-block">
+            <a class="chapter-link" href="#" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: Introducing the Shell</a>
+            <a class="chapter-link float-end" href="#" rel="next">Next: Working With Files... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+          </div>
+        </nav>
+			</div> <!-- / div.primary-content.col-xs-12 -->
+		</div> <!-- / div.row -->
+		<footer class="row footer mx-md-3">
+			<hr/>
+			<div class="col-md-6">
+				<p>All Carpentry lessons are subject to the <a href="#">Code of Conduct</a></p>
+				<p><a href="#">Edit on Github</a> | <a href="#">Contributing</a> | <a href="#">Source</a></p>
+				<p><a href="#">Cite</a> | <a href="#">Contact</a> | <a href="#">About</a></p>
+			</div>
+			<div class="col-md-6">
+				<p>Licensed under <a href="#">CC-BY 4.0 2018–2021</a> by The Carpentries</p>
+				<p>Licensed under <a href="#">CC-BY 4.0 2016–2018</a> by Software Carpentry Foundation</p>
+				<p>Using <a href="#">The Carpentries style</a> version <a href="#">9.5.3</a>.</p>
+			</div>
+		</footer>
+	</div> <!-- / div.container -->
+	<div id="to-top">
+		<a href="#top">
+			<i class="search-icon" data-feather="arrow-up" role="img" aria-label="Back to top"></i><br/>
+			<span class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Back</span> To Top
+		</a>
+	</div>
+	<script>
+		feather.replace();
+	</script>
+
+  </body>
+</html>

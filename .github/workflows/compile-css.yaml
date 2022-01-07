@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Clean
-        run: rm -rf assets/ inst/pkgdown/assets/
+        run: rm -rf assets/ inst/
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
@@ -35,7 +35,7 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add assets/ || echo ""
-          git add pkgdown/ || echo ""
+          git add inst/ || echo ""
           git commit -m 'regenerated css/js' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
 
