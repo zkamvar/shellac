@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-mkdir -p assets/
+mkdir -p inst/pkgdown/assets/
 vend=source/javascripts/vendor
 cust=source/javascripts/custom
 
@@ -10,5 +10,5 @@ uglifyjs ${vend}/jquery/jquery.js \
   ${vend}/feather-icons/feather.js \
   ${cust}/menu.js \
   --compress \
-  --output assets/scripts.js
+  --output inst/pkgdown/assets/scripts.js
 

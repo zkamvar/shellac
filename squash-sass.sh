@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-mkdir -p assets/
-cp -r source/fonts/ assets/fonts/
-cp -r source/images/ assets/images/
+mkdir -p inst/pkgdown/assets/
+cp -r source/fonts/ inst/pkgdown/assets/fonts/
+cp -r source/images/ inst/pkgdown/assets/images/
 
 sass -s compressed \
   source/stylesheets/styles.css.scss \
-  assets/styles.css
+  inst/pkgdown/assets/styles.css
