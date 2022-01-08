@@ -30,6 +30,11 @@ $( document ).ready(function() {
         }
     });
 
+    // var codeLabel = "<h3 class='code-label'>CODE<i aria-hidden='true' data-feather='chevron-left'></i><i aria-hidden='true' data-feather='chevron-right'></i></h3>"
+    // $("div.sourceCode > pre.sourceCode").attr("tabindex", "0");
+    // $("div.sourceCode").addClass("codewrapper");
+    // $(codeLabel).prependTo(".sourceCode .codewrapper");
+    // feather.replace();
     //attempt to smoothly handle resizing windows
     $(window).on('resize', function(){
         //nav is shown by default on desktop only
