@@ -128,7 +128,7 @@
       text-decoration:underline;
     }
     &:focus {
-      box-shadow: --bs-primary-rgb 0px 0px 0px 4px;
+      box-shadow: var(--bs-primary-rgb) 0px 0px 0px 4px;
     }
     &.collapsed {
       //box-shadow: none;
