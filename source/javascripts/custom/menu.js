@@ -96,11 +96,11 @@ $( document ).ready(function() {
         if(codeExpanded == true) {
             $(".challenge-button").not(".collapsed").click();
             codeExpanded = false;
-            $("#expand-code").html("Expand All Code " + feather.icons['plus'].toSvg());
+            $("#expand-code").html("Expand All Solutions " + feather.icons['plus'].toSvg());
         } else {
             $(".challenge-button.collapsed").click();
             codeExpanded = true;
-            $("#expand-code").html("Collapse All Code " + feather.icons['minus'].toSvg());
+            $("#expand-code").html("Collapse All Solutions " + feather.icons['minus'].toSvg());
         }
     });
 });
