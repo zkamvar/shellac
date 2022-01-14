@@ -94,11 +94,11 @@ $( document ).ready(function() {
     //expand all code button
     $("#expand-code").click(function(){
         if(codeExpanded == true) {
-            $(".challenge-button").not(".collapsed").click();
+            $(".solution-button").not(".collapsed").click();
             codeExpanded = false;
             $("#expand-code").html("Expand All Solutions " + feather.icons['plus'].toSvg());
         } else {
-            $(".challenge-button.collapsed").click();
+            $(".solution-button.collapsed").click();
             codeExpanded = true;
             $("#expand-code").html("Collapse All Solutions " + feather.icons['minus'].toSvg());
         }
