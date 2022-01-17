@@ -1,5 +1,4 @@
 /* Adapted from pkgdown version 2.0.1 (c) RStudio 2022 */
-
 pre .img, pre .r-plt {
   margin: 5px 0;
 }
@@ -11,6 +10,9 @@ pre .img img, pre .r-plt img {
 /* Links ---------------------------------------------------- */
 
 code a:any-link {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 90%;
+  border-radius: 4px;
   text-decoration: underline;
   text-decoration-color: $gray-400;
 }
